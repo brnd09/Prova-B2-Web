@@ -28,7 +28,8 @@ function calcular_imc() {
         } else {
             classificacao = 'Obesidade classe 3';
         }
-
+            somaIMCs += imc; 
+        
         alert(`${nome}, seu IMC é ${imc.toFixed(2)} - ${classificacao}`);
 
         if (imc > imcMaisAlto) {
@@ -47,8 +48,6 @@ function calcular_imc() {
                 Quantidade de pessoas avaliadas: ${totalpessoas}
                 Média dos IMCs: ${media_imc}
             `);
-        } else {
-            somaIMCs += imc;
         }
     }
 }
